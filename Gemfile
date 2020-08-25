@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.6.6'
 
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
-gem 'sqlite3'                                # RDB形式のデータベースまたはデータベース管理ソフト（RDB=SQLを扱うことのできるDBのこと）
+# gem 'sqlite3'                                # RDB形式のデータベースまたはデータベース管理ソフト（RDB=SQLを扱うことのできるDBのこと）
 gem 'puma', '~> 4.1'                         # スピードと並列処理を追求したRubyのスレッドベースのWebサーバー
 gem 'sass-rails', '>= 6'                     # SCSS(Syntactically Awesome StyleSheet：効率的にCSSが書ける言語)
 gem 'webpacker', '~> 4.0'                    # CSS、JavaScript、画像などを１つのファイルとしてまとめるためのモジュールバンドラー、node.jsモジュールの１つ
@@ -59,6 +59,7 @@ gem 'omniauth-google-oauth2'                 # Google
 # gem 'therubyracer'                           # Javascriptの実行エンジンであるv8をRubyから叩ける用にしてくれるgem
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
