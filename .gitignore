@@ -123,6 +123,7 @@ DerivedData/
 ## Gcc Patch
 /*.gcno
 
+
 # secret key
 /.env
 
